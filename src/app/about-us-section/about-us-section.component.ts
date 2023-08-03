@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us-section.component.css']
 })
 export class AboutUsSectionComponent {
+title = "TEMPLATEANGULAR";
+constructor(){
+  console.log(`new-title is $(this.TEMPLATEANGULAR) `);
+}
 
 }

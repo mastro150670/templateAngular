@@ -14,7 +14,7 @@ export class BoxComponent {
  constructor() { }
 
   ngOnInit (): void {
-    console.log(this.titulo ,this.texto);
+    //console.log(this.titulo,this.texto);
   }
  
 }

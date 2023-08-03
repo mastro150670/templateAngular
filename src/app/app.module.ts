@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { WhyUsSectionComponent } from './why-us-section/why-us-section.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HttpClientModule } from '@angular/common/http';
+import { OnePostComponent } from './one-post/one-post.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     ClientsComponent,
     ContactComponent,
     WhyUsSectionComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    OnePostComponent
   ],
   imports: [
     BrowserModule,

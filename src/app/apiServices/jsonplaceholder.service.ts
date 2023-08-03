@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class JsonplaceholderService {
 
+export class JsonplaceholderService {
   url ='https://jsonplaceholder.typicode.com/';
 
   constructor(private http:HttpClient ) { }
@@ -16,11 +16,12 @@ export class JsonplaceholderService {
 
   onePost(id:number){
     return this.http.get(this.url + '/posts/' + id);
+
   }
 
 
    commentsPost(id:number){
-    return this.http.get(this.url + '/posts' + id + '/comments/' );
+    return this.http.get(this.url + '/posts/' + id + '/comments/' );
 
    }
 
@@ -29,7 +30,6 @@ export class JsonplaceholderService {
 
   }
 }
-function commentPost() {
-  throw new Error('Function not implemented.');
-}
+
+
 
